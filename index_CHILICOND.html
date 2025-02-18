@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css">
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="style/css/swiper-bundle.min.css">
+      <!--=============== SWIPER AOS ===============-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <title>CHILICOND</title>
+    </head>
+    <body>
+        <!-- =======================================================================NAVBAR -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-5">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand ps-5">Cilikon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-2">
+                <a href="#" class="nav-link active" style="color:#2D2D2D" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#product" class="nav-link active" style="color:#2D2D2D" aria-current="Page">Products</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#aboutProject" class="nav-link active" style="color:#2D2D2D" aria-current="page">Project References</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#aboutus" class="nav-link active" style="color:#2D2D2D" aria-current="page">About Us</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#ourpartner" class="nav-link active" style="color:#2D2D2D" aria-current="page">Our Partner</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#" class="nav-link active" style="color:#2D2D2D" caria-current="page"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <style>
+        .carousel-item{
+            height:32rem;
+            background:#777;
+            color:#EFF8FF;
+            position:relative;
+            background-position:center;
+            background-size:cover;
+        }
+        .carousel-item .container{
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        .gradient-divider {
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to right, #0F75BC 70%, #ED1C24 30%);
+        }
+        .btn-custom {
+        background-image: url(style/assets/button.webp) !important;
+        background-position: center;
+        color: white !important;
+        }
+
+        .btn-custom:hover {
+        background-color: #E04A2B !important;
+        border-color: #E04A2B !important;
+        }
+
+      </style>
+        <!-- ======================================================================= HERO -->
+        <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="slide 1"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="slide 2"></button>
+                <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="slide 3"></button>
+              </div>
+            <div class="carousel-inner text-center text-sm-start">
+                <div class="carousel-item active" style="background-image: url(style/assets/hero1.webp);">
+                    <div class="container translate-middle-y">
+                        <h1 class="ms-3">Optimal Air Solutions <br> for a Better Tomorrow 🌍</h1><br>
+                        <p class="lead ms-3">Reliable HVAC systems that enhance comfort, efficiency, and air quality—designed for homes, businesses, and industries. ❄️🔥</p>
+                        <a href="#product" class="btn btn-lg btn-custom fs-6 p-2 ms-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(style/assets/hero2.webp);">
+                    <div class="container translate-middle-y">
+                        <h1 class="ms-3">Enhance Your Space with <br> HVAC Innovation</h1><br>
+                        <p class="lead ms-3">Optimize your indoor climate with cutting-edge HVAC technology that<br>offers efficiency, reliability, and superior comfort for every environment</p>
+                        <a href="#product" class="btn btn-lg btn-custom fs-6 p-2 ms-3">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url(style/assets/hero3.webp);">
+                    <div class="container translate-middle-y">
+                        <h1 class="ms-3">Elevate Your Space with<br>Premium HVAC Solutions </h1><br>
+                        <p class="lead ms-3">Indulge in unparalleled comfort and sophistication with our expertly<br>crafted HVAC systems, designed for efficiency and elegance. </p>
+                        <a href="#product" class="btn btn-lg btn-custom fs-6 p-2 ms-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev p-5 w-auto d-none d-md-block" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden d-none d-md-block">Previous</span>
+            </button>
+            <button class="carousel-control-next p-5 w-auto d-none d-md-block" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden d-none d-md-block">Next</span>
+            </button> 
+        </div>
+
+        <div class="gradient-divider" data-aos="fade-right"></div>
+
+        <style>
+        a {
+        text-decoration: none;
+        }
+
+        img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        }
+
+        #product{
+            background-image: url(style/assets/BG_Backgruond_product.webp);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 9vh;
+        }
+
+        /*=============== CARD ===============*/
+
+        .card__container {
+        padding-block: 3rem;
+        /* margin-bottom: 5rem; */
+        }
+
+        .card__content {
+        margin-inline: 1.75rem;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        }
+
+        .card__article {
+        width: 100px;
+        border-radius: 1.25rem;
+        overflow: hidden;
+        }
+
+        .card__image {
+        position: relative;
+        /* background-color: #0F75BC; */
+        padding-top: .5rem;
+        margin-bottom: -.75rem;
+        }
+
+        .card__image .card__img {
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Menambahkan filter untuk efek zoom yang lebih halus */
+        }
+
+        .card__image:hover .card__img {
+        transform: scale(1.5); /* Zoom in sedikit */
+        transition: transform 0.3s ease; /* Efek transisi halus */
+        filter: brightness(1.1); /* Tambahkan efek sedikit cahaya untuk efek visual lebih halus */
+        }
+
+        .card__data {
+        /* background-color: #131A1E; */
+        padding: .5rem;
+        margin-top: 1.3rem;
+        border-radius: 1rem;
+        text-align: center;
+        position: relative;
+        z-index: 10;
+        }
+
+        .card__img {
+        width: 150px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 5;
+        }
+
+        .card__shadow {
+        width: 200px;
+        height: 200px;
+        /* background-color: #88b9db; */
+        border-radius: 50%;
+        position: absolute;
+        top: 5.75rem;
+        left: 0;
+        right: 0;
+        margin-inline: auto;
+        filter: blur(45px);
+        }
+
+        .card__name {
+        font-size: 16px;
+        color: #2D2D2D;
+        /* margin-bottom: .75rem; */
+    
+        }
+
+        .card__description {
+        font-weight: 300;
+        font-size: 13px;
+        /* margin-bottom: 1.75rem; */
+        color: #2D2D2D;
+        }
+
+        .card__button {
+        display: inline-block;
+        background-image: url(style/assets/button.webp);
+        background-position: center;
+        color: white !important;
+        padding: .75rem 1.5rem;
+        border-radius: .5rem;
+        font-weight: 600;
+        }
+
+        .card__button:hover {
+        background-color: #E04A2B;
+        border-color: #E04A2B;
+        box-shadow: #E04A2B;
+        }
+
+        /* Swiper class */
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+        content: "";
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+        width: initial;
+        height: initial;
+        font-size: 3rem;
+        color: #3D91CC;
+        display: none;
+        }
+
+        .swiper-button-prev {
+        left: 0;
+        }
+
+        .swiper-button-next {
+        right: 0;
+        }
+
+        .swiper-pagination-bullet {
+        background-color: hsl(212, 32%, 40%);
+        opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+        background-color: #3D91CC;
+        }
+
+        /*=============== BREAKPOINTS ===============*/
+        /* For small devices */
+        @media screen and (max-width: 320px) {
+        .card__data {
+            padding: 1rem;
+        }
+        }
+
+        /* For medium devices */
+        @media screen and (min-width: 768px) {
+        .card__content {
+            margin-inline: 3rem;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: block;
+        }
+        }
+
+        @media screen and (max-width: 768px) {
+            .card__container {
+                overflow-x: auto; /* Memungkinkan scroll horizontal */
+                -webkit-overflow-scrolling: touch; /* Smooth scrolling di iOS */
+                padding: 0; /* Hapus padding agar tampilan lebih lebar */
+            }
+
+            .swiper-wrapper {
+                display: flex; /* Pastikan elemen-elemen card berada dalam satu baris */
+                flex-wrap: nowrap; /* Menghindari pemecahan baris */
+            }
+
+            .card__article {
+                flex: 0 0 auto; /* Menjaga ukuran tetap dan tidak mengubah layout */
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: block;
+            }
+        }
+
+        /* For large devices */
+        @media screen and (min-width: 1120px) {
+        .card__container {
+            max-width: 1120px;
+        }
+
+        .swiper-button-prev {
+            left: -1rem;
+        }
+        .swiper-button-next {
+            right: -1rem;
+        }
+        }
+        </style>
+
+        <!-- ======================================================================= PRODUCT -->
+        <section id="product" class="pt-5">
+            <p class="h2 text-center" data-aos="zoom-in-down">PRODUCT</p>
+            <p class="lead fs-6 text-center" data-aos="zoom-in-down">Discover our premium products, crafted to deliver innovation, quality, and reliability.</p>
+            <div class="container">
+
+                <div class="card__container swiper" data-aos="zoom-in-down">
+                    <div class="card__content">
+                  <div class="swiper-wrapper">
+                      <article class="card__article swiper-slide">
+                        <a href="PrDesignRoomMOT.html">
+                            <div class="card__image">
+                                <img src="style/assets/MOT/MOT1.webp" alt="Design Room MOT" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">DESIGN ROOM MOT</h3>
+                                <p class="card__description">
+                                    Special Air Conditioning Design for laboratories & Pharmaceutical Industry according to Ministry of Health Standards and International Standards ISO 6 - ISO14644
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                     </article>
+                     
+                     <article class="card__article swiper-slide">
+                        <a href="PrCustomizedOutdoor.html">
+                            <div class="card__image">
+                                 <img src="style/assets/Customized_Outdoor/Customized_Outdoor.webp" alt="Customized Outdoor" class="card__img">
+                                 <div class="card__shadow"></div>
+                                </div>
+                                
+                                <div class="card__data">
+                                    <h3 class="card__name">CUSTOMIZED OUTDOOR</h3>
+                                    <p class="card__description">
+                                        Customized Outdoor to Reaching Parameter HVAC  for Room MOT, Laboratories & Etc.
+                                    </p>
+                                    <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                </div>
+                            </a>
+                     </article>
+         
+                     <article class="card__article swiper-slide">
+                        <a href="PrCustomizedAHU.html">
+                            <div class="card__image">
+                                <img src="style/assets/Customized_AHU/Customized_AHU.webp" alt="Customized AHU" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">CUSTOMIZED AHU</h3>
+                                <p class="card__description">
+                                    Customized Air Conditioning
+                                    And Dehumidifying Package Cleanroom Class  : 1.000 / 10.000 ISO Class 6 / 7.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    
+                     <article class="card__article swiper-slide">
+                        <a href="PrSmartControl.html">
+                            <div class="card__image">
+                                <img src="style/assets/Smart_Control/Smart_Control.webp" alt="Smart Control" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">SMART CONTROL</h3>
+                                <p class="card__description">
+                                    Customized Control & Monitoring HVAC, Lamp, Power for Room MOT. Android Feature.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    
+                    <article class="card__article swiper-slide">
+                        <a href="Fan_FilterUnit.html">
+                            <div class="card__image">
+                                <img src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" alt="Fan Filter Unit" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">FAN FILTER UNIT</h3>
+                                <p class="card__description">
+                                    Designed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. 
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </a>
+                        </div>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrLaminar.html">
+                            <div class="card__image">
+                           <img src="style/assets/Laminar/Laminar.webp" alt="Laminar" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+                        
+                        <div class="card__data">
+                            <h3 class="card__name">LAMINAR AIR FLOW</h3>
+                            <p class="card__description">
+                                The Laminar Flow Diffuser with HEPA Filter has been designed for modern operating roomsand other clean spaces
+                            </p>
+                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                        </div>
+                    </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                           <img src="style/assets/Air_Filter/Product_Air_Filter.webp" alt="Air Filter" class="card__img">
+                           <div class="card__shadow"></div>
+                        </div>
+                        
+                        <div class="card__data">
+                            <h3 class="card__name">AIR FILTER</h3>
+                            <p class="card__description">
+                                Air Filter supporting HVAC equipment for clean room : Frefilter, Medium Filter & Hepa Filter 
+                            </p>
+                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                        </div>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrPassbox.html">
+                            <div class="card__image">
+                                <img src="style/assets/PassBox/Passbox1.webp" alt="Passbox" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">PASS BOX</h3>
+                                <p class="card__description">
+                                    Pass Box is supporting equipment for clean room and pharmaceutical manufacturing facilities and laboratories.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrLiqian.html">
+                            <div class="card__image">
+                                <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" alt="Liqian" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">CTI-Liqian LQ LED 1700-1500</h3>
+                                <p class="card__description">
+                                    LED Operating Lamp.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrLQLED.html">
+                            <div class="card__image">
+                                <img src="style/assets/LQLED 700500/LQLED 700500.webp" alt="LQLED" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">LQLED 700500</h3>
+                                <p class="card__description">
+                                    <!-- LED Operating Lamp. -->
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrCreport.html">
+                            <div class="card__image">
+                                <img src="style/assets/Creport/Creport 3000 single arm manual.webp" alt="Creeport" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">Creport 3000 single arm manual</h3>
+                                <p class="card__description">
+                                    Manual Surgical Pendant.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrSink.html">
+                            <div class="card__image">
+                                <img src="style/assets/Surgical_Scrub_Sink_Station/Surgical Scrub Sink Station.webp" alt="Surgical Scrub Sink Station" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">Surgical Scrub Sink Station</h3>
+                                <p class="card__description">
+                                    Variants to suit your needs: single for 1 person; double for 2 people; single for 3 people; double for 4 people.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card__article swiper-slide">
+                        <a href="PrOperatingTable.html">
+                            <div class="card__image">
+                                <img src="style/assets/LDT_Operating_Table/LDT 100 Operating Table.webp" alt="operating Table" class="card__img">
+                                <div class="card__shadow"></div>
+                            </div>
+                            
+                            <div class="card__data">
+                                <h3 class="card__name">LDT 100 Operating Table</h3>
+                                <p class="card__description">
+                                    Operation beds adopt Medical Grade 304# full stainless steel materials, the surface is processed through matte processing, feeling more modern, more convenient to clean.
+                                </p>
+                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                            </div>
+                        </a>
+                    </article>
+                    </div>
+                    </div>
+            
+            <!-- Navigation buttons -->
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+                </div>
+            </div>
+         </section>
+
+         
+        <div class="gradient-divider"></div>
+
+         <!-- ======================================================================= PROJECT REFERENCES -->
+        <section id="aboutProject" class="pt-5" style="background-color: #F3F7FA;">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row align-items-start">
+                    <div class="text-center text-sm-start mb-4 mb-md-0 me-md-5 pe-2" data-aos="flip-left">
+                        <p class="h2 mt-5 pt-5">PROJECT REFERENCE</p>
+                        <p class="lead fs-6">Explore a selection of successful projects that showcase our expertise in delivering innovative and tailored solutions for our clients.</p>
+                        <a href="ProjectReference.html" class="btn btn-lg btn-custom fs-6 p-2">View More</a>
+                    </div>
+                    <div class="unique_slider_wrapper position-relative mb-5 pb-5" data-aos="flip-left">
+                        <div class="unique_slider_container swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/1)RSUD H BOB BAZAR.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RSUD H BOB BAZAR</p>
+                                            <p class="fs-6">Kalianda, Juni 2024</p>
+                                            <p class="unique_project_desc">Pengadaan HVAC & Panel PLC AC Control Ruang OK1&2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/2)RSHS SADIKIN.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RSHS SADIKIN</p>
+                                            <p class="fs-6">Bandung, Juni 2024</p>
+                                            <p class="unique_project_desc">Design Ruang Isolasi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/3)RS FIKRI MEDIKA.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RS FIKRI MEDIKA</p>
+                                            <p class="fs-6">Karawang, Juni 2024</p>
+                                            <p class="unique_project_desc">Design Ruang Isolasi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/4)PT. DHARMAPALA USAHA SUKSES.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">PT. DHARMAPALA USAHA SUKSES</p>
+                                            <p class="fs-6">Cilacap, April 2024</p>
+                                            <p class="unique_project_desc">Pengadaan Panel Distribusi & PLC Control Ruang Produksi</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/5)RSU PINDAD.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RSU PINDAD</p>
+                                            <p class="fs-6">Bandung, April 2024</p>
+                                            <p class="unique_project_desc">Design Ruang MOT Positive OK1,2,3 & Koridor Full System</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/6)RS MURNI TEGUH.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RS MURNI TEGUH</p>
+                                            <p class="fs-6">Ciledug, Maret 2024</p>
+                                            <p class="unique_project_desc">Pengadaan Panel Control AC OK1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/7)RS MATA MAKASSAR.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RS MATA MAKASSAR</p>
+                                            <p class="fs-6">Makassar, December 2023</p>
+                                            <p class="unique_project_desc">Pengadaan HVAC & Panel Control OK1,2,3,4 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/8)RSUD KEMBANGAN.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RSUD KEMBANGAN</p>
+                                            <p class="fs-6">Jakarta, December 2023</p>
+                                            <p class="unique_project_desc">Pengadaan Panel PLC AC Control Ruang OK1&2</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="unique_project_card text-center">
+                                        <img src="project/9)RS PONOROGO.webp" class="unique_card_img w-100" alt="Project Image">
+                                        <div class="unique_card_content p-1">
+                                            <p class="h6 fw-bold">RS PONOROGO</p>
+                                            <p class="fs-6">Ponorogo, December 2023</p>
+                                            <p class="unique_project_desc">Pengadaan Panel PLC AC Ruang OK1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Navigation buttons -->
+                            <div class="swiper-button-next unique_slider_next"></div>
+                            <div class="swiper-button-prev unique_slider_prev"></div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+
+        <!-- CSS -->
+        <style>
+         @media (min-width: 1000px) {
+            .slider-2 {
+                margin-top:320px;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 780px) {
+            .d-flex {
+                flex-direction: column-reverse; /* Memindahkan slider ke bawah */
+            }
+
+            .text-center {
+                order: -1; /* Memindahkan konten judul dan tombol ke atas */
+                margin-bottom: 30px; /* Menambahkan sedikit jarak di bawah */
+            }
+
+            .unique_slider_wrapper {
+                margin-top: 30px; /* Memberikan jarak antara slider dan konten di atasnya */
+            }
+            
+            .unique_project_card {
+                margin-bottom: 15px; /* Menambah jarak antar card di tablet */
+            }
+        }
+
+        .unique_slider_wrapper {
+            width: 100%;
+            max-width: 600px;
+            padding: 20px 0;
+        }
+
+        .unique_project_card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+            height: 50vh;
+        }
+
+        .unique_card_img {
+            border-radius: 8px 8px 0 0;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .unique_project_desc {
+            font-size: clamp(12px, 2vw, 11px);
+            color: #666;
+        }
+
+        .unique_slider_next,
+        .unique_slider_prev {
+            color: #333 !important;
+        }
+
+        .unique_slider_next::after,
+        .unique_slider_prev::after {
+            font-size: 24px !important;
+        }
+
+        @media (max-width: 767.98px) {
+            .unique_project_card {
+                max-width: 100%;
+            }
+        }
+        </style>
+
+        <!-- JavaScript -->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                    const uniqueSwiper = new Swiper('.unique_slider_container', {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                grabCursor: true,
+                autoplay: {
+                    delay: 400, // Delay antar slide (dalam milidetik)
+                    disableOnInteraction: false, // Autoplay akan tetap berjalan meskipun ada interaksi
+                },
+
+                loop: true, // Menambahkan loop agar setelah card terakhir kembali ke card pertama
+
+                navigation: {
+                    nextEl: '.unique_slider_next',
+                    prevEl: '.unique_slider_prev',
+                },
+
+                breakpoints: {
+                    // Desktop
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 20
+                    }
+                }
+            });
+
+            // Stop autoplay ketika mouse berada di area swiper
+            const swiperContainer = document.querySelector('.unique_slider_container');
+            swiperContainer.addEventListener('mouseenter', () => {
+                uniqueSwiper.autoplay.stop(); // Stop autoplay
+            });
+
+            // Restart autoplay ketika mouse keluar dari area swiper
+            swiperContainer.addEventListener('mouseleave', () => {
+                uniqueSwiper.autoplay.start(); // Start autoplay
+            });
+        });
+        </script>
+
+        <div class="gradient-divider"></div>
+
+        <!-- ======================================================================= ABOUT US -->
+
+        <style>
+        .aboutus_container {
+            position: relative;
+            width: 100%;
+            min-height: 400px;
+            margin: 50px 0;
+        }
+
+        .aboutus_content {
+            flex: 0 0 50%;
+            max-width: 50%;
+            background-color: white;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .aboutus_title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .aboutus_description {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #666;
+        }
+
+        .aboutus_btn{
+            max-width: 30%;
+        }
+
+        @media (max-width: 768px) {
+            .aboutus_container {
+                flex-direction: column;
+            }
+            .aboutus_content{
+                max-width: 100%;
+                max-height: 90%;
+
+            }
+            .aboutus_image img{
+                display: none;
+            }
+
+            .aboutus_content {
+                padding: 30px;
+            }
+            .aboutus_btn{
+            max-width: 35%;
+            }
+        }
+        @media (min-width: 1024px){
+            .aboutus_container{
+                margin-left: 6rem;
+            }
+        }
+        </style>
+
+        <section id="aboutus" style="background-image: url(style/assets/bakcground-about-us.webp);">
+            <div class="container">
+                <div class="row">
+                    <div class="aboutus_container d-flex align-items-stretch" data-aos="zoom-in-down">
+                        <!-- Image Section -->
+                        <div class="aboutus_image">
+                            <img src="style/assets/vission-mission.webp" alt="Vision Mission" class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+                        
+                        <!-- Content Section -->
+                        <div class="aboutus_content">
+                            <h2 class="aboutus_title mb-4">ABOUT US</h2>
+                            <p class="aboutus_description">
+                                We are a dedicated team committed to delivering the best solutions for your needs. With years of experience in the industry, we are focused on providing high-quality products and services you can trust. Our mission is to create exceptional experiences for every client while fostering strong, mutually beneficial relationships. Join us on this journey, and discover the range of services designed to help you grow and succeed!
+                            </p>
+                            <a href="AboutUs.html" class="aboutus_btn btn btn-lg btn-custom fs-6 p-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================================================================= OUR PARTNER -->
+
+
+        <style>
+            #ourpartner{
+                background-image: url(style/assets/bakcground-our-partner.webp);
+            }
+
+            .container_ourpartner{
+                padding-top: 10vh;
+            }
+            .ourpartnercenter{
+                padding-top: 5vh;
+            }
+            .ourpartner-logos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                padding: 30px 0;
+            }
+
+            .ourpartner-logos img {
+                width: 80px;
+                height: auto;
+            }
+
+            .ourpartner_btn{
+                background-image: none !important;
+                border-color: #EFF8FF !important;
+                box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+            }
+
+            @media (max-width: 768px) {
+                .ourpartner-logos img {
+                    width: 40px;
+                }
+            }
+        </style>
+
+
+
+        <section id="ourpartner">
+            <div class="container_ourpartner container">
+                <div class="ourpartnertop text-center" data-aos="fade-up">
+                    <p class="h2" style="color: #EFF8FF;">OUR PARTNER</p>
+                    <p class="lead fs-6" style="color: #EFF8FF;">We take pride in partnering with leading brands and companies, delivering the best solutions for comfort and optimal efficiency.</p>
+                </div>
+                <div class="ourpartnercenter">
+                    <div class="ourpartner-logos" data-aos="fade-up">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="container_ourpartner container pb-5">
+                <div class="d-flex justify-content-between flex-wrap" data-aos="flip-up">
+                    <div class="leftside">
+                        <p class="h2">Collab <span style="color: #EFF8FF;">With Us!🚀</span></p>
+                        <p class="lead" style="color:#EFF8FF;">Unlock new opportunities by collaborating with us! <br> Let's create innovative solutions together and achieve greater success.</p>
+                    </div>
+                    <div class="rightside pe-5 me-5">
+                        <a href="#" class="ourpartner_btn btn btn-lg btn-custom fs-6 p-2">Contact Us!</a>
+                    </div>
+                </div>
+            </div>
+
+<!-- ======================================================================= FOOTER -->
+            <style>
+                .breaker{
+                    padding-top: 5vh;
+                }
+                .footer {
+                width: 100%;
+                height: 50px;
+                background: #ED1C24 30%;
+                }
+                .whiteinbox{
+                    border-radius: 10px;
+                }
+                @media (max-width: 767.98px){
+                    .whiteinbox{
+                        margin-left: .7rem;
+                    }
+                }
+            </style>
+
+            <div class="breaker"></div>
+            <div class="container d-flex justify-content-between pb-5">
+                <div class="row w-100">
+                    <div class="footerleft pt-5 d-inline col-md-6">
+                        <img src="style/assets/logo-footer.webp" alt="">
+                        <p>_________________________________</p>
+                        <div class="footer-company-info mb-3">
+                            <p class="h5">PT. CILIKON INDONESIA</p>
+                            <p class="d-flex"> <img src="style/assets/location-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Jl. Bintara Jaya, Ruko Bintara Permai Blok D No.3, Bintara Jaya.<br>Kec. Bekasi Barat, Kota Bekasi, Jawa Barat 17136.</p>
+                            <p class="d-flex"> <img src="style/assets/phone-svgrepo-com.svg" style="width: 25px;" alt="" class="logo-location mb-2 me-1"> Phone : 021 - 38317603</p>
+                            <p class="d-flex"> <img src="style/assets/email-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Bisnis@cilikon.co.id</p>
+                            <p>_________________________________</p>
+                            <div class="d-flex align-items-center">
+                                <p class="h6 mb-0">FOLLOW US</p>
+                                <a href="https://facebook.com/name" target="_blank" class="px-2"><img src="style/assets/facebook-color-svgrepo-com.svg" style="width: 25px;" alt=""></a>
+                                <a href="https://www.youtube.com/@chilicondstore7010" target="_blank" class="px-2"><img src="style/assets/youtube-color-svgrepo-com.svg" style="width: 28px;" alt=""></a>
+                                <a href="https://api.whatsapp.com/send/?phone=082117275541&text&type=phone_number&app_absent=0" target="_blank" class="px-2"><img src="style/assets/whatsapp-svgrepo-com.svg" style="width: 32px;" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
+                        <p class="h6">Have a Question</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="namaDepan"></label>
+                                <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="namaBelakang"></label>
+                                <input type="text" class="form-control" id="namaBelakang" placeholder="Enter Your Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"></label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter a Valid Email Address">
+                            </div>
+                            <div class="form-group">
+                                <label for="pesan"></label>
+                                <textarea class="form-control" id="pesan" rows="5" placeholder="Enter Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit"><a href="#" class="btn btn-lg btn-custom fs-6 p-2">Submit</a></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>  
+        <div class="footer">
+            <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
+        </div>
+        
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+         <script src="style/js/swiper-bundle.min.js"></script>
+         <script src="style/js/chilicond.js"></script>
+        <!--=============== SWIPER JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

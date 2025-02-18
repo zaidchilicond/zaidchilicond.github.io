@@ -1,0 +1,5 @@
+1. referensi ITU as partner dan kompetitor Syas Teknologi
+2. kalau sudah selesai diisi, ganti versi indo dan english.
+3. isi details product dibuat bagaimana spesifikasinya terstruktur isinya jadi ga beda-beda sesuai brosur. jadi bisa kosong atau disi klo ada.
+4. urutannya untuk details product di bagian atas udah bener, tinggal bawah di ganti spesifikasi dan pdf nya kyk punya web lain.
+5. tombol yang bisa scroll up.

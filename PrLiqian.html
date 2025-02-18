@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css">
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="style/css/swiper-bundle.min.css">
+      <!--=============== SWIPER AOS ===============-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Details Liqian</title>
+</head>
+<body>
+    <!-- =======================================================================NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-5">
+      <div class="container-fluid">
+        <a href="index_CHILICOND.html" class="navbar-brand ps-5">Cilikon</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item px-2">
+              <a href="index_CHILICOND.html#carouselHero" class="nav-link active" style="color:#2D2D2D" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="index_CHILICOND.html#product" class="nav-link active" style="color:#2D2D2D" aria-current="Page">Products</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="index_CHILICOND.html#aboutProject" class="nav-link active" style="color:#2D2D2D" aria-current="page">Project References</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="index_CHILICOND.html#aboutus" class="nav-link active" style="color:#2D2D2D" aria-current="page">About Us</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="index_CHILICOND.html#ourpartner" class="nav-link active" style="color:#2D2D2D" aria-current="page">Our Partner</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="#" class="nav-link active" style="color:#2D2D2D" caria-current="page"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+      a {
+        text-decoration: none;
+        }
+      .main-image {
+        width: 350px;
+        max-width: 100%;
+        height: auto;
+      }
+      .thumbnail-img {
+        width: 80px;
+        height: auto;
+        cursor: pointer;
+        transition: opacity 0.3s;
+      }
+      .thumbnail-img:hover {
+        opacity: 0.7;
+      }
+      .btn-custom {
+        background-image: url(style/assets/button.webp);
+        background-position: center;
+        color: white;
+        }
+
+        .btn-custom:hover {
+        background-color: #E04A2B;
+        border-color: #E04A2B;
+        }
+        .gradient-divider {
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to right, #0F75BC 70%, #ED1C24 30%);
+        }
+    </style>
+
+    <div class="container pt-5 mt-5">
+      <div class="row">
+        <!-- Kolom kiri: Gambar Produk -->
+        <div class="col-md-6">
+          <div class="head-image mb-3">
+            <!-- Gambar utama yang akan berubah -->
+            <img id="main-image" src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" class="main-image img-fluid border rounded shadow-sm" alt="Liqian">
+          </div>
+          <div class="d-flex">
+            <!-- Thumbnail Gambar -->
+            <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" alt="liqian1" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp')">
+            <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-15001.webp" alt="Laqian" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Liqian/CTI-Liqian LQ LED 1700-15001.webp')">
+            <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-15002.webp" alt="Laqian" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Liqian/CTI-Liqian LQ LED 1700-15002.webp')">
+            <!-- <img src="style/assets/MOT/MOT4.webp" alt="Thumbnail 3" class="thumbnail-img me-2" onclick="changeImage('style/assets/MOT/MOT4.webp')"> -->
+            <!-- <img src="gambar4.jpg" alt="Thumbnail 4" class="thumbnail-img me-2" onclick="changeImage('gambar4.jpg')"> -->
+          </div>
+          <a href="index_CHILICOND.html#product" class="fw-bold"> << SEE OTHER PRODUCT</a>
+        </div>
+    
+        <!-- Kolom kanan: Deskripsi Produk -->
+        <div class="col-md-6">
+          <P class="h2 fw-bolder">LAMINAR FLOW DIFFUSER WITH HEPA FILTER</P>
+          <p class="text-muted fw-bold">LED OPERATING LAMP</p>
+          <!-- <p class="lead fs-6 fw-normal mb-5">The Laminar Flow Diffuser with HEPA filter has been designed for modern operating roms and other clean spaces. controling particle concentration with a room by providing undirectional laminar airflow with low initial face velocity, supplying clean air to the space without entrainment of cotaminated air from the occupied space. -->
+            <br><br>
+            <!-- Beberapa teknologi yang kami satukan tersebut kedepan akan sangat berkaitan dengan perkembangan teknologi dimana dituntut Rumah Sakit harus menyediakan sarana teknologi informasi yang dapat diakses dimanapun dengan berbasis android/gadget. CCL MOT Smart System yang memiliki workshop mekanik dengan peralatan cukup lengap dan dapat memproduksi beberapa jenis perangkat mekanik berbahan staninless steel yang diperlukan dalam sistem tata udara dan Ruang Operasi -->
+          </p>
+          <!-- Harga Produk -->
+          <!-- <h3>Rp 1.500.000</h3> -->
+          
+          <!-- Tombol untuk membeli -->
+           <div>
+             <button class="btn btn-primary btn-custom">Request a Quote</button>
+             <br><br>
+             <a href="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.pdf" target="_blank" class="fw-bold">OPEN BROCHURE (Click to view or download)</a>
+             <br>
+           </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function changeImage(imageSrc) {
+        document.getElementById('main-image').src = imageSrc;
+      }
+    </script>
+    <div class="container mb-5">
+      <div class="row text-center">
+          <p class="fw-bold fs-5 pt-5 pb-3">PRODUCT DETAILS</p>
+          <div class="col-md-6">
+              <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" alt="Fan Filter Unit" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+              <embed src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.pdf" width="100%" height="700vh" type="application/pdf">
+          </div>
+      </div>
+    </div>
+    <div class="gradient-divider"></div>
+
+<!-- ======================================================================= FOOTER -->
+    <style>
+      .breaker{
+          padding-top: 5vh;
+      }
+      .footer {
+      width: 100%;
+      height: 50px;
+      background: #ED1C24 30%;
+      }
+      .whiteinbox{
+          border-radius: 10px;
+      }
+      @media (max-width: 767.98px){
+          .whiteinbox{
+              margin-left: .7rem;
+          }
+      }
+    </style>
+
+    <section style="background-image: url(style/assets/background_details_product.webp);">
+      <div class="container d-flex justify-content-between pb-5 pt-5">
+        <div class="row w-100">
+          <div class="footerleft pt-5 d-inline col-md-6">
+              <img src="style/assets/logo-footer.webp" alt="">
+              <p>_________________________________</p>
+              <div class="footer-company-info">
+                  <p class="h5">PT. CILIKON INDONESIA</p>
+                  <p class="d-flex"> <img src="style/assets/location-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Jl. Bintara Jaya, Ruko Bintara Permai Blok D No.3, Bintara Jaya.<br>Kec. Bekasi Barat, Kota Bekasi, Jawa Barat 17136.</p>
+                  <p class="d-flex"> <img src="style/assets/phone-svgrepo-com.svg" style="width: 25px;" alt="" class="logo-location mb-2 me-1"> Phone : 021 - 38317603</p>
+                  <p class="d-flex"> <img src="style/assets/email-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Bisnis@cilikon.co.id</p>
+                  <p>_________________________________</p>
+                  <div class="d-flex align-items-center mb-3">
+                      <p class="h6 mb-0">FOLLOW US</p>
+                      <a href="https://facebook.com/name" target="_blank" class="px-2"><img src="style/assets/facebook-color-svgrepo-com.svg" style="width: 25px;" alt=""></a>
+                      <a href="https://www.youtube.com/@chilicondstore7010" target="_blank" class="px-2"><img src="style/assets/youtube-color-svgrepo-com.svg" style="width: 28px;" alt=""></a>
+                      <a href="https://api.whatsapp.com/send/?phone=082117275541&text&type=phone_number&app_absent=0" target="_blank" class="px-2"><img src="style/assets/whatsapp-svgrepo-com.svg" style="width: 32px;" alt=""></a>
+                  </div>
+              </div>
+          </div>
+          <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
+              <p class="h6">Have a Question</p>
+              <form action="">
+                  <div class="form-group">
+                      <label for="namaDepan"></label>
+                      <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="namaBelakang"></label>
+                      <input type="text" class="form-control" id="namaBelakang" placeholder="Enter Your Last Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email"></label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter a Valid Email Address">
+                  </div>
+                  <div class="form-group">
+                    <label for="pesan"></label>
+                      <textarea class="form-control" id="pesan" rows="5" placeholder="Enter Your Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-submit"><a href="#" class="btn btn-lg btn-custom fs-6 p-2">Submit</a></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>  
+    <div class="footer">
+    <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</body>
+</html>
