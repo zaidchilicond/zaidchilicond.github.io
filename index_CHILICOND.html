@@ -120,12 +120,14 @@
 
         <div class="gradient-divider" data-aos="fade-right"></div>
 
+        <!-- ======================================================== PRODUCTS -->
+
         <style>
         a {
         text-decoration: none;
         }
 
-        img {
+        .card__image img {
         display: block;
         max-width: 100%;
         height: auto;
@@ -156,6 +158,7 @@
         width: 100px;
         border-radius: 1.25rem;
         overflow: hidden;
+        transition: transform 0.3s ease-in-out; /* Efek transisi halus untuk article */
         }
 
         .card__image {
@@ -169,10 +172,12 @@
         transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Menambahkan filter untuk efek zoom yang lebih halus */
         }
 
+        .card__article:hover .card__image .card__img {
+        transform: scale(1.2); /* Zoom in sedikit pada gambar */
+        }
+
         .card__image:hover .card__img {
-        transform: scale(1.5); /* Zoom in sedikit */
-        transition: transform 0.3s ease; /* Efek transisi halus */
-        filter: brightness(1.1); /* Tambahkan efek sedikit cahaya untuk efek visual lebih halus */
+        filter: brightness(1.1); /* Efek mengkilap hanya ketika mengarahkan mouse ke gambar */
         }
 
         .card__data {
@@ -267,6 +272,42 @@
         background-color: #3D91CC;
         }
 
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            .card__container {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                padding: 0;
+            }
+
+            .swiper-wrapper {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            .card__article {
+                flex: 0 0 auto;
+            }
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 1120px) {
+            .card__container {
+                max-width: 1120px;
+            }
+
+            .swiper-button-prev {
+                left: -1rem;
+            }
+            .swiper-button-next {
+                right: -1rem;
+            }
+        }
+
         /*=============== BREAKPOINTS ===============*/
         /* For small devices */
         @media screen and (max-width: 320px) {
@@ -329,238 +370,253 @@
             <p class="h2 text-center" data-aos="zoom-in-down">PRODUCT</p>
             <p class="lead fs-6 text-center" data-aos="zoom-in-down">Discover our premium products, crafted to deliver innovation, quality, and reliability.</p>
             <div class="container">
-
-                <div class="card__container swiper" data-aos="zoom-in-down">
+        
+                <!-- Baris Pertama (6 Produk) -->
+                <div class="card__container swiper text-center" data-aos="zoom-in-down">
                     <div class="card__content">
-                  <div class="swiper-wrapper">
-                      <article class="card__article swiper-slide">
-                        <a href="PrDesignRoomMOT.html">
-                            <div class="card__image">
-                                <img src="style/assets/MOT/MOT1.webp" alt="Design Room MOT" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">DESIGN ROOM MOT</h3>
-                                <p class="card__description">
-                                    Special Air Conditioning Design for laboratories & Pharmaceutical Industry according to Ministry of Health Standards and International Standards ISO 6 - ISO14644
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                     </article>
-                     
-                     <article class="card__article swiper-slide">
-                        <a href="PrCustomizedOutdoor.html">
-                            <div class="card__image">
-                                 <img src="style/assets/Customized_Outdoor/Customized_Outdoor.webp" alt="Customized Outdoor" class="card__img">
-                                 <div class="card__shadow"></div>
+                        <div class="swiper-wrapper">
+                            <!-- Produk 1-6 -->
+                            <article class="card__article swiper-slide">
+                                <a href="PrDesignRoomMOT.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/MOT/MOT1.webp" alt="Design Room MOT" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">DESIGN ROOM MOT</h3>
+                                        <p class="card__description">
+                                            Special Air Conditioning Design for laboratories & Pharmaceutical Industry according to Ministry of Health Standards and International Standards ISO 6 - ISO14644
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrCustomizedOutdoor.html">
+                                    <div class="card__image">
+                                         <img src="style/assets/Customized_Outdoor/Customized_Outdoor.webp" alt="Customized Outdoor" class="card__img">
+                                         <div class="card__shadow"></div>
+                                        </div>
+                                        
+                                        <div class="card__data">
+                                            <h3 class="card__name">CUSTOMIZED OUTDOOR</h3>
+                                            <p class="card__description">
+                                                Customized Outdoor to Reaching Parameter HVAC  for Room MOT, Laboratories & Etc.
+                                            </p>
+                                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                        </div>
+                                    </a>
+                             </article>
+                             <article class="card__article swiper-slide">
+                                <a href="PrCustomizedAHU.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Customized_AHU/Customized_AHU.webp" alt="Customized AHU" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">CUSTOMIZED AHU</h3>
+                                        <p class="card__description">
+                                            Customized Air Conditioning
+                                            And Dehumidifying Package Cleanroom Class  : 1.000 / 10.000 ISO Class 6 / 7.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrSmartControl.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Smart_Control/Smart_Control.webp" alt="Smart Control" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">SMART CONTROL</h3>
+                                        <p class="card__description">
+                                            Customized Control & Monitoring HVAC, Lamp, Power for Room MOT. Android Feature.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="Fan_FilterUnit.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" alt="Fan Filter Unit" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">FAN FILTER UNIT</h3>
+                                        <p class="card__description">
+                                            Designed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. 
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </a>
+                                </div>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrLaminar.html">
+                                    <div class="card__image">
+                                    <img src="style/assets/Laminar/Laminar.webp" alt="Laminar" class="card__img">
+                                    <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">LAMINAR AIR FLOW</h3>
+                                        <p class="card__description">
+                                            The Laminar Flow Diffuser with HEPA Filter has been designed for modern operating roomsand other clean spaces
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <div class="card__image">
+                                   <img src="style/assets/Air_Filter/Product_Air_Filter.webp" alt="Air Filter" class="card__img">
+                                   <div class="card__shadow"></div>
                                 </div>
                                 
                                 <div class="card__data">
-                                    <h3 class="card__name">CUSTOMIZED OUTDOOR</h3>
+                                    <h3 class="card__name">AIR FILTER</h3>
                                     <p class="card__description">
-                                        Customized Outdoor to Reaching Parameter HVAC  for Room MOT, Laboratories & Etc.
+                                        Air Filter supporting HVAC equipment for clean room : Frefilter, Medium Filter & Hepa Filter 
                                     </p>
                                     <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                 </div>
-                            </a>
-                     </article>
-         
-                     <article class="card__article swiper-slide">
-                        <a href="PrCustomizedAHU.html">
-                            <div class="card__image">
-                                <img src="style/assets/Customized_AHU/Customized_AHU.webp" alt="Customized AHU" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">CUSTOMIZED AHU</h3>
-                                <p class="card__description">
-                                    Customized Air Conditioning
-                                    And Dehumidifying Package Cleanroom Class  : 1.000 / 10.000 ISO Class 6 / 7.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    
-                     <article class="card__article swiper-slide">
-                        <a href="PrSmartControl.html">
-                            <div class="card__image">
-                                <img src="style/assets/Smart_Control/Smart_Control.webp" alt="Smart Control" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">SMART CONTROL</h3>
-                                <p class="card__description">
-                                    Customized Control & Monitoring HVAC, Lamp, Power for Room MOT. Android Feature.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    
-                    <article class="card__article swiper-slide">
-                        <a href="Fan_FilterUnit.html">
-                            <div class="card__image">
-                                <img src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" alt="Fan Filter Unit" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">FAN FILTER UNIT</h3>
-                                <p class="card__description">
-                                    Designed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. 
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </a>
+                            </article>
                         </div>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrLaminar.html">
-                            <div class="card__image">
-                           <img src="style/assets/Laminar/Laminar.webp" alt="Laminar" class="card__img">
-                           <div class="card__shadow"></div>
-                        </div>
-                        
-                        <div class="card__data">
-                            <h3 class="card__name">LAMINAR AIR FLOW</h3>
-                            <p class="card__description">
-                                The Laminar Flow Diffuser with HEPA Filter has been designed for modern operating roomsand other clean spaces
-                            </p>
-                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                        </div>
-                    </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <div class="card__image">
-                           <img src="style/assets/Air_Filter/Product_Air_Filter.webp" alt="Air Filter" class="card__img">
-                           <div class="card__shadow"></div>
-                        </div>
-                        
-                        <div class="card__data">
-                            <h3 class="card__name">AIR FILTER</h3>
-                            <p class="card__description">
-                                Air Filter supporting HVAC equipment for clean room : Frefilter, Medium Filter & Hepa Filter 
-                            </p>
-                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                        </div>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrPassbox.html">
-                            <div class="card__image">
-                                <img src="style/assets/PassBox/Passbox1.webp" alt="Passbox" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">PASS BOX</h3>
-                                <p class="card__description">
-                                    Pass Box is supporting equipment for clean room and pharmaceutical manufacturing facilities and laboratories.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrLiqian.html">
-                            <div class="card__image">
-                                <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" alt="Liqian" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">CTI-Liqian LQ LED 1700-1500</h3>
-                                <p class="card__description">
-                                    LED Operating Lamp.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrLQLED.html">
-                            <div class="card__image">
-                                <img src="style/assets/LQLED 700500/LQLED 700500.webp" alt="LQLED" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">LQLED 700500</h3>
-                                <p class="card__description">
-                                    <!-- LED Operating Lamp. -->
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrCreport.html">
-                            <div class="card__image">
-                                <img src="style/assets/Creport/Creport 3000 single arm manual.webp" alt="Creeport" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">Creport 3000 single arm manual</h3>
-                                <p class="card__description">
-                                    Manual Surgical Pendant.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrSink.html">
-                            <div class="card__image">
-                                <img src="style/assets/Surgical_Scrub_Sink_Station/Surgical Scrub Sink Station.webp" alt="Surgical Scrub Sink Station" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">Surgical Scrub Sink Station</h3>
-                                <p class="card__description">
-                                    Variants to suit your needs: single for 1 person; double for 2 people; single for 3 people; double for 4 people.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
-                    <article class="card__article swiper-slide">
-                        <a href="PrOperatingTable.html">
-                            <div class="card__image">
-                                <img src="style/assets/LDT_Operating_Table/LDT 100 Operating Table.webp" alt="operating Table" class="card__img">
-                                <div class="card__shadow"></div>
-                            </div>
-                            
-                            <div class="card__data">
-                                <h3 class="card__name">LDT 100 Operating Table</h3>
-                                <p class="card__description">
-                                    Operation beds adopt Medical Grade 304# full stainless steel materials, the surface is processed through matte processing, feeling more modern, more convenient to clean.
-                                </p>
-                                <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
-                            </div>
-                        </a>
-                    </article>
                     </div>
+                    <!-- Navigation buttons untuk baris pertama -->
+                    <div class="swiper-button-next swiper-button-next-top">
+                        <i class="ri-arrow-right-s-line"></i>
                     </div>
-            
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next">
-                <i class="ri-arrow-right-s-line"></i>
-            </div>
-            
-            <div class="swiper-button-prev">
-                <i class="ri-arrow-left-s-line"></i>
-            </div>
-            
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev swiper-button-prev-top">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <a href="Produk_Katalog.html" class="btn btn-lg btn-custom fs-6 p-2">Open Product Catalog</a>
+                    <!-- Pagination -->
+                    <!-- <div class="swiper-pagination swiper-pagination-top"></div> -->
+                </div>
+                
+                <!-- Baris Kedua (7 Produk) -->
+                <div class="card__container swiper text-center" data-aos="zoom-in-down">
+                    <div class="card__content">
+                        <div class="swiper-wrapper">
+                            <!-- Produk 7-13 -->
+                            <article class="card__article swiper-slide">
+                                <a href="PrPassbox.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/PassBox/Passbox1.webp" alt="Passbox" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">PASS BOX</h3>
+                                        <p class="card__description">
+                                            Pass Box is supporting equipment for clean room and pharmaceutical manufacturing facilities and laboratories.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrLiqian.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp" alt="Liqian" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">CTI-Liqian LQ LED 1700-1500</h3>
+                                        <p class="card__description">
+                                            LED Operating Lamp.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrLQLED.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/LQLED 700500/LQLED 700500.webp" alt="LQLED" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">LQLED 700500</h3>
+                                        <p class="card__description">
+                                            <!-- LED Operating Lamp. -->
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrCreport.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Creport/Creport 3000 single arm manual.webp" alt="Creeport" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">Creport 3000 single arm manual</h3>
+                                        <p class="card__description">
+                                            Manual Surgical Pendant.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrSink.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/Surgical_Scrub_Sink_Station/Surgical Scrub Sink Station.webp" alt="Surgical Scrub Sink Station" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">Surgical Scrub Sink Station</h3>
+                                        <p class="card__description">
+                                            Variants to suit your needs: single for 1 person; double for 2 people; single for 3 people; double for 4 people.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                            <article class="card__article swiper-slide">
+                                <a href="PrOperatingTable.html">
+                                    <div class="card__image">
+                                        <img src="style/assets/LDT_Operating_Table/LDT 100 Operating Table.webp" alt="operating Table" class="card__img">
+                                        <div class="card__shadow"></div>
+                                    </div>
+                                    
+                                    <div class="card__data">
+                                        <h3 class="card__name">LDT 100 Operating Table</h3>
+                                        <p class="card__description">
+                                            Operation beds adopt Medical Grade 304# full stainless steel materials, the surface is processed through matte processing, feeling more modern, more convenient to clean.
+                                        </p>
+                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons untuk baris kedua -->
+                    <div class="swiper-button-next swiper-button-next-bottom">
+                        <i class="ri-arrow-right-s-line"></i>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-bottom">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <a href="Produk_Katalog.html" class="btn btn-lg btn-custom fs-6 p-2">Open Product Catalog</a>
+                    <!-- Pagination -->
+                    <!-- <div class="swiper-pagination swiper-pagination-bottom"></div> -->
                 </div>
             </div>
-         </section>
+        </section>
 
          
         <div class="gradient-divider"></div>
@@ -793,88 +849,44 @@
 
         <!-- ======================================================================= ABOUT US -->
 
-        <style>
-        .aboutus_container {
-            position: relative;
-            width: 100%;
-            min-height: 400px;
-            margin: 50px 0;
-        }
-
-        .aboutus_content {
-            flex: 0 0 50%;
-            max-width: 50%;
-            background-color: white;
-            padding: 40px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .aboutus_title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .aboutus_description {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #666;
-        }
-
-        .aboutus_btn{
-            max-width: 30%;
-        }
-
-        @media (max-width: 768px) {
-            .aboutus_container {
-                flex-direction: column;
-            }
-            .aboutus_content{
-                max-width: 100%;
-                max-height: 90%;
-
-            }
-            .aboutus_image img{
-                display: none;
-            }
-
-            .aboutus_content {
-                padding: 30px;
-            }
-            .aboutus_btn{
-            max-width: 35%;
-            }
-        }
-        @media (min-width: 1024px){
-            .aboutus_container{
-                margin-left: 6rem;
-            }
-        }
-        </style>
-
-        <section id="aboutus" style="background-image: url(style/assets/bakcground-about-us.webp);">
+        <section class="about-us-section bg-light py-5">
             <div class="container">
-                <div class="row">
-                    <div class="aboutus_container d-flex align-items-stretch" data-aos="zoom-in-down">
-                        <!-- Image Section -->
-                        <div class="aboutus_image">
-                            <img src="style/assets/vission-mission.webp" alt="Vision Mission" class="img-fluid h-100 w-100 object-fit-cover">
-                        </div>
-                        
-                        <!-- Content Section -->
-                        <div class="aboutus_content">
-                            <h2 class="aboutus_title mb-4">ABOUT US</h2>
-                            <p class="aboutus_description">
-                                We are a dedicated team committed to delivering the best solutions for your needs. With years of experience in the industry, we are focused on providing high-quality products and services you can trust. Our mission is to create exceptional experiences for every client while fostering strong, mutually beneficial relationships. Join us on this journey, and discover the range of services designed to help you grow and succeed!
-                            </p>
-                            <a href="AboutUs.html" class="aboutus_btn btn btn-lg btn-custom fs-6 p-2">Learn More</a>
-                        </div>
-                    </div>
+            <div class="row align-items-center d-flex justify-content-center">
+                <!-- Gambar -->
+                <div class="photo_img col-md-6">
+                    <img src="style/assets/download (4).webp" alt="About Us Image" class="about-us-img img-fluid rounded">
+                </div>
+                <!-- Konten -->
+                <div class="col-md-6">
+                    <h2 class="about-us-heading mb-4">About Us</h2>
+                    <p class="about-us-text mb-4">
+                        Kami adalah perusahaan yang berdedikasi untuk memberikan solusi terbaik bagi kebutuhan Anda. Dengan tim yang berpengalaman dan teknologi terkini, kami siap membantu Anda mencapai tujuan bisnis Anda. Kami percaya bahwa inovasi dan kualitas adalah kunci kesuksesan.
+                    </p>
+                    <a href="AboutUs.html" class="about_us btn btn-lg btn-custom fs-6 p-2">Learn More</a>
                 </div>
             </div>
+            </div>
         </section>
+
+        <style>
+            .photo_img{
+                width: 100%;
+                max-width: 60vh;
+            }
+
+            .about_us{
+                background-image: url(style/assets/button.webp) !important;
+                /* border-color: #1f1f1f !important; */
+                color: #eeeeee !important;
+                /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); */
+            }
+            .about_us:hover{
+                background-image: url(style/assets/button.webp) !important;
+                background-color: none !important;
+                border-color: none !important;
+                color: #eeeeee !important;
+            }
+        </style>
 
         <!-- ======================================================================= OUR PARTNER -->
 
@@ -898,9 +910,32 @@
                 padding: 30px 0;
             }
 
-            .ourpartner-logos img {
-                width: 80px;
-                height: auto;
+            #ITU{
+                width: 100%;
+                max-width: 25vh;
+                height: 100%;
+                max-height: 20vh;
+            }
+            
+            #haiwell{
+                width: 100%;
+                max-width: 15vh;
+                height: 100%;
+                max-height: 15h;
+            }
+
+            #NAP{
+                width: 100%;
+                max-width: 25vh;
+                height: 100%;
+                max-height: 20vh;
+            }
+
+            #Nowie{
+                width: 100%;
+                max-width: 25vh;
+                height: 100%;
+                max-height: 20vh;
             }
 
             .ourpartner_btn{
@@ -926,21 +961,10 @@
                 </div>
                 <div class="ourpartnercenter">
                     <div class="ourpartner-logos" data-aos="fade-up">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
-                        <img src="style/assets/python-logo-only.svg" alt="Partner Logo">
+                        <img src="Partner/Partner_Haiwell.webp" alt="Partner Logo" id="haiwell">
+                        <img src="Partner/Partner_ITU.webp" alt="Partner Logo" id="ITU">
+                        <img src="Partner/Partner_NAP.webp" alt="Partner Logo" id="NAP">
+                        <img src="Partner/Partner_Nowie.webp" alt="Partner Logo" id="Nowie">
                     </div>
                 </div>
             </div>
@@ -951,7 +975,7 @@
                         <p class="lead" style="color:#EFF8FF;">Unlock new opportunities by collaborating with us! <br> Let's create innovative solutions together and achieve greater success.</p>
                     </div>
                     <div class="rightside pe-5 me-5">
-                        <a href="#" class="ourpartner_btn btn btn-lg btn-custom fs-6 p-2">Contact Us!</a>
+                        <a href="contact.html" class="ourpartner_btn btn btn-lg btn-custom fs-6 p-2">Contact Us!</a>
                     </div>
                 </div>
             </div>

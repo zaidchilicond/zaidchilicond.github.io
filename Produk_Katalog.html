@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css">
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="style/css/swiper-bundle.min.css">
+      <!--=============== SWIPER AOS ===============-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <title>CHILICOND</title>
+    </head>
+    <body>
+
+    <!-- =======================================================================NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top mb-5">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand ps-5">Cilikon</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item px-2">
+                <a href="#" class="nav-link active" style="color:#2D2D2D" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#product" class="nav-link active" style="color:#2D2D2D" aria-current="Page">Products</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#aboutProject" class="nav-link active" style="color:#2D2D2D" aria-current="page">Project References</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#aboutus" class="nav-link active" style="color:#2D2D2D" aria-current="page">About Us</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#ourpartner" class="nav-link active" style="color:#2D2D2D" aria-current="page">Our Partner</a>
+              </li>
+              <li class="nav-item px-2">
+                <a href="#" class="nav-link active" style="color:#2D2D2D" caria-current="page"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!-- ======================================================== MAIN -->
+      <style>
+        .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        height: 60vh;
+        max-height: 100%;
+        }
+
+        .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-img-top {
+        height: 100%;
+        max-height: 10rem;
+        width: 100%;
+        max-width: 10rem;
+        margin: auto;
+        margin-top: 1rem;
+        object-fit: cover;
+        }
+
+        .card-title {
+        font-size: 1.25rem;
+        font-weight: bold;
+        }
+
+        .card-text {
+        font-size: 0.9rem;
+        color: #555;
+        }
+
+        .button{
+            position: absolute;
+            bottom: 1.5rem;
+        }
+      </style>
+
+      <section style="background-image: url(style/assets/bakcground-our-partner.webp);">
+          <div class="container py-5">
+              <h1 class="text-center mb-5 mt-5 pt-5 fw-bold" style="color: #EFF8FF; ">CHILICOND <span style="color: #d10c13;" class="fw-bold">CATALOG</span></h1>
+              <div class="d-flex justify-content-between align-items-center my-3">
+                  <a href="index_CHILICOND.html" class="btn btn-danger">
+                      Back to Main Menu
+                  </a>
+              </div>
+              <div class="row" id="product-list">
+                  <!-- Card produk akan di-generate oleh JavaScript -->
+                </div>
+            </div>
+        </section>
+
+    
+      <script>
+          
+          // Data produk (contoh)
+        const products = [
+        {
+            id: 1,
+            name: "DESIGN ROOM MOT",
+            description: "Special Air Conditioning Design for laboratories & Pharmaceutical Industry according to Ministry of Health Standards and International Standards ISO 6 - ISO14644",
+            price: "Rp 100.000",
+            image: "style/assets/MOT/MOT1.webp",
+            details: "PrDesignRoomMOT.html"            
+        },
+        {
+            id: 2,
+            name: "CUSTOMIZED OUTDOOR",
+            description: "Customized Outdoor to Reaching Parameter HVAC  for Room MOT, Laboratories & Etc.",
+            price: "Rp 150.000",
+            image: "style/assets/Customized_Outdoor/Customized_Outdoor.webp",
+            details: "PrCustomizedOutdoor.html"            
+        },
+        {
+            id: 3,
+            name: "CUSTOMIZED AHU",
+            description: "Customized Air Conditioning And Dehumidifying Package Cleanroom Class  : 1.000 / 10.000 ISO Class 6 / 7.",
+            price: "Rp 200.000",
+            image: "style/assets/Customized_AHU/Customized_AHU.webp",
+            details: "PrCustomizedAHU.html"            
+        },
+        {
+            id: 4,
+            name: "SMART CONTROL",
+            description: "Customized Control & Monitoring HVAC, Lamp, Power for Room MOT. Android Feature.",
+            price: "Rp 250.000",
+            image: "style/assets/Smart_Control/Smart_Control.webp",
+            details: "PrSmartControl.html"            
+        },
+        {
+            id: 5,
+            name: "FAN FILTER UNIT",
+            description: "Designed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories.",
+            price: "Rp 250.000",
+            image: "style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp",
+            details: "Fan_FilterUnit.html"            
+        },
+        {
+            id: 6,
+            name: "LAMINAR AIR FLOW",
+            description: "The Laminar Flow Diffuser with HEPA Filter has been designed for modern operating roomsand other clean spaces.",
+            price: "Rp 250.000",
+            image: "style/assets/Laminar/Laminar.webp",
+            details: "PrLaminar.html"            
+        },
+        {
+            id: 7,
+            name: "AIR FILTER",
+            description: "Air Filter supporting HVAC equipment for clean room : Frefilter, Medium Filter & Hepa Filter",
+            price: "Rp 250.000",
+            image: "style/assets/Air_Filter/Product_Air_Filter.webp",
+            details: "contact.html"            
+        },
+        {
+            id: 8,
+            name: "PASS BOX",
+            description: "Pass Box is supporting equipment for clean room and pharmaceutical manufacturing facilities and laboratories.",
+            price: "Rp 250.000",
+            image: "style/assets/PassBox/Passbox1.webp",
+            details: "PrPassbox.html"            
+        },
+        {
+            id: 9,
+            name: "CTI-Liqian LQ LED 1700-1500",
+            description: "LED Operating Lamp.",
+            price: "Rp 250.000",
+            image: "style/assets/Liqian/CTI-Liqian LQ LED 1700-1500.webp",
+            details: "PrLiqian.html"            
+        },
+        {
+            id: 10,
+            name: "LQLED 700500",
+            description: "",
+            price: "Rp 250.000",
+            image: "style/assets/LQLED 700500/LQLED 700500.webp",
+            details: "PrLQLED.html"            
+        },
+        {
+            id: 11,
+            name: "CREPORT 3000 SINGLE ARM MANUAL",
+            description: "Manual Surgical Pendant.",
+            price: "Rp 250.000",
+            image: "style/assets/Creport/Creport 3000 single arm manual.webp",
+            details: "PrCreport.html"            
+        },
+        {
+            id: 12,
+            name: "SURGICAL SCRUB SINK STATION",
+            description: "Variants to suit your needs: single for 1 person; double for 2 people; single for 3 people; double for 4 people.",
+            price: "Rp 250.000",
+            image: "style/assets/Surgical_Scrub_Sink_Station/Surgical Scrub Sink Station.webp",
+            details: "PrSink.html"            
+        },
+        {
+            id: 13,
+            name: "LDT 100 Operating Table",
+            description: "Operation beds adopt Medical Grade 304# full stainless steel materials, the surface is processed through matte processing, feeling more modern, more convenient to clean.",
+            price: "Rp 250.000",
+            image: "style/assets/LDT_Operating_Table/LDT 100 Operating Table.webp",
+            details: "PrOperatingTable.html"            
+        },
+        ];
+
+        // Fungsi untuk menampilkan produk
+        function displayProducts() {
+        const productList = document.getElementById('product-list');
+        let html = '';
+        
+        products.forEach(product => {
+            html += `
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.name}</h5>
+                    <p class="card-text">${product.description}</p>
+                    <a href="${product.details}" class="button btn btn-primary">Lihat Detail</a>
+                </div>
+                </div>
+                </div>
+                `;
+                });
+                
+                productList.innerHTML = html;
+            }
+            
+            // Jalankan fungsi saat halaman dimuat
+            document.addEventListener('DOMContentLoaded', displayProducts);
+    </script>
+    
+      <!-- Bootstrap JS dan dependencies -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<!-- ======================================================================= FOOTER -->
+    <style>
+      .breaker{
+          padding-top: 5vh;
+      }
+      .footer {
+      width: 100%;
+      height: 50px;
+      background: #ED1C24 30%;
+      }
+      .whiteinbox{
+          border-radius: 10px;
+      }
+      @media (max-width: 767.98px){
+          .whiteinbox{
+              margin-left: .7rem;
+          }
+      }
+      .gradient-divider {
+        width: 100%;
+        height: 20px;
+        background: linear-gradient(to right, #0F75BC 70%, #ED1C24 30%);
+        }
+    </style>
+
+    <div class="gradient-divider"></div>
+
+    <section style="background-image: url(style/assets/background_details_product.webp);">
+      <div class="container d-flex justify-content-between pb-5 pt-5">
+        <div class="row w-100">
+          <div class="footerleft pt-5 d-inline col-md-6">
+              <img src="style/assets/logo-footer.webp" alt="">
+              <p>_________________________________</p>
+              <div class="footer-company-info">
+                  <p class="h5">PT. CILIKON INDONESIA</p>
+                  <p class="d-flex"> <img src="style/assets/location-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Jl. Bintara Jaya, Ruko Bintara Permai Blok D No.3, Bintara Jaya.<br>Kec. Bekasi Barat, Kota Bekasi, Jawa Barat 17136.</p>
+                  <p class="d-flex"> <img src="style/assets/phone-svgrepo-com.svg" style="width: 25px;" alt="" class="logo-location mb-2 me-1"> Phone : 021 - 38317603</p>
+                  <p class="d-flex"> <img src="style/assets/email-svgrepo-com.svg" style="width: 20px;" alt="" class="logo-location mb-3 me-2"> Bisnis@cilikon.co.id</p>
+                  <p>_________________________________</p>
+                  <div class="d-flex align-items-center mb-3">
+                      <p class="h6 mb-0">FOLLOW US</p>
+                      <a href="https://facebook.com/name" target="_blank" class="px-2"><img src="style/assets/facebook-color-svgrepo-com.svg" style="width: 25px;" alt=""></a>
+                      <a href="https://www.youtube.com/@chilicondstore7010" target="_blank" class="px-2"><img src="style/assets/youtube-color-svgrepo-com.svg" style="width: 28px;" alt=""></a>
+                      <a href="https://api.whatsapp.com/send/?phone=082117275541&text&type=phone_number&app_absent=0" target="_blank" class="px-2"><img src="style/assets/whatsapp-svgrepo-com.svg" style="width: 32px;" alt=""></a>
+                  </div>
+              </div>
+          </div>
+          <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
+              <p class="h6">Have a Question</p>
+              <form action="">
+                  <div class="form-group">
+                      <label for="namaDepan"></label>
+                      <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="namaBelakang"></label>
+                      <input type="text" class="form-control" id="namaBelakang" placeholder="Enter Your Last Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email"></label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter a Valid Email Address">
+                  </div>
+                  <div class="form-group">
+                    <label for="pesan"></label>
+                      <textarea class="form-control" id="pesan" rows="5" placeholder="Enter Your Message"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-submit"><a href="#" class="btn btn-lg btn-custom fs-6 p-2">Submit</a></button>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>  
+    <div class="footer">
+    <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </body>
+</html>

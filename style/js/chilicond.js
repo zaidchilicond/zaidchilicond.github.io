@@ -1,18 +1,19 @@
 /*=============== SWIPER JS ===============*/
-let swiperCards = new Swiper(".card__content", {
+// Inisialisasi Swiper untuk baris pertama (6 produk)
+let swiperCardsTop = new Swiper(".card__container:first-child .card__content", {
   loop: true,
   spaceBetween: 30,
   grabCursor: true,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: ".swiper-pagination-top",
     clickable: true,
     dynamicBullets: true,
   },
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next-top",
+    prevEl: ".swiper-button-prev-top",
   },
 
   breakpoints:{
@@ -25,16 +26,29 @@ let swiperCards = new Swiper(".card__content", {
   },
 });
 
-const cards = document.querySelectorAll('.card__article');
+// Inisialisasi Swiper untuk baris kedua (7 produk)
+let swiperCardsBottom = new Swiper(".card__container:last-child .card__content", {
+  loop: true,
+  spaceBetween: 30,
+  grabCursor: true,
 
-cards.forEach(card => {
-  card.addEventListener('mouseenter', () => {
-    const img = card.querySelector('.card__img');
-    img.style.transform = 'scale(1.2)';
-  });
-  
-  card.addEventListener('mouseleave', () => {
-    const img = card.querySelector('.card__img');
-    img.style.transform = 'scale(1)';
-  });
+  pagination: {
+    el: ".swiper-pagination-bottom",
+    clickable: true,
+    dynamicBullets: true,
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next-bottom",
+    prevEl: ".swiper-button-prev-bottom",
+  },
+
+  breakpoints:{
+    600: {
+      slidesPerView: 3,
+    },
+    968: {
+      slidesPerView: 4,
+    },
+  },
 });
