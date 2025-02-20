@@ -145,7 +145,6 @@
 
         .card__container {
         padding-block: 3rem;
-        /* margin-bottom: 5rem; */
         }
 
         .card__content {
@@ -158,30 +157,27 @@
         width: 100px;
         border-radius: 1.25rem;
         overflow: hidden;
-        transition: transform 0.3s ease-in-out; /* Efek transisi halus untuk article */
-        }
+        transition: transform 0.3s ease-in-out;        }
 
         .card__image {
         position: relative;
-        /* background-color: #0F75BC; */
         padding-top: .5rem;
         margin-bottom: -.75rem;
         }
 
         .card__image .card__img {
-        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Menambahkan filter untuk efek zoom yang lebih halus */
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
         }
 
         .card__article:hover .card__image .card__img {
-        transform: scale(1.2); /* Zoom in sedikit pada gambar */
+        transform: scale(1.2);
         }
 
         .card__image:hover .card__img {
-        filter: brightness(1.1); /* Efek mengkilap hanya ketika mengarahkan mouse ke gambar */
+        filter: brightness(1.1);
         }
 
         .card__data {
-        /* background-color: #131A1E; */
         padding: .5rem;
         margin-top: 1.3rem;
         border-radius: 1rem;
@@ -200,7 +196,6 @@
         .card__shadow {
         width: 200px;
         height: 200px;
-        /* background-color: #88b9db; */
         border-radius: 50%;
         position: absolute;
         top: 5.75rem;
@@ -212,15 +207,12 @@
 
         .card__name {
         font-size: 16px;
-        color: #2D2D2D;
-        /* margin-bottom: .75rem; */
-    
+        color: #2D2D2D;  
         }
 
         .card__description {
         font-weight: 300;
         font-size: 13px;
-        /* margin-bottom: 1.75rem; */
         color: #2D2D2D;
         }
 
@@ -240,7 +232,6 @@
         box-shadow: #E04A2B;
         }
 
-        /* Swiper class */
         .swiper-button-prev:after,
         .swiper-button-next:after {
         content: "";
@@ -272,7 +263,6 @@
         background-color: #3D91CC;
         }
 
-        /* Responsive Design */
         @media screen and (max-width: 768px) {
             .card__container {
                 overflow-x: auto;
@@ -330,18 +320,18 @@
 
         @media screen and (max-width: 768px) {
             .card__container {
-                overflow-x: auto; /* Memungkinkan scroll horizontal */
-                -webkit-overflow-scrolling: touch; /* Smooth scrolling di iOS */
-                padding: 0; /* Hapus padding agar tampilan lebih lebar */
+                overflow-x: auto; 
+                -webkit-overflow-scrolling: touch; 
+                padding: 0; 
             }
 
             .swiper-wrapper {
-                display: flex; /* Pastikan elemen-elemen card berada dalam satu baris */
-                flex-wrap: nowrap; /* Menghindari pemecahan baris */
+                display: flex; 
+                flex-wrap: nowrap; 
             }
 
             .card__article {
-                flex: 0 0 auto; /* Menjaga ukuran tetap dan tidak mengubah layout */
+                flex: 0 0 auto; 
             }
 
             .swiper-button-prev,
@@ -388,7 +378,6 @@
                                         <p class="card__description">
                                             Special Air Conditioning Design for laboratories & Pharmaceutical Industry according to Ministry of Health Standards and International Standards ISO 6 - ISO14644
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -404,7 +393,6 @@
                                             <p class="card__description">
                                                 Customized Outdoor to Reaching Parameter HVAC  for Room MOT, Laboratories & Etc.
                                             </p>
-                                            <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                         </div>
                                     </a>
                              </article>
@@ -421,7 +409,6 @@
                                             Customized Air Conditioning
                                             And Dehumidifying Package Cleanroom Class  : 1.000 / 10.000 ISO Class 6 / 7.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -437,7 +424,6 @@
                                         <p class="card__description">
                                             Customized Control & Monitoring HVAC, Lamp, Power for Room MOT. Android Feature.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -453,7 +439,6 @@
                                         <p class="card__description">
                                             Designed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. 
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </a>
                                 </div>
                             </article>
@@ -469,7 +454,6 @@
                                         <p class="card__description">
                                             The Laminar Flow Diffuser with HEPA Filter has been designed for modern operating roomsand other clean spaces
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -484,7 +468,6 @@
                                     <p class="card__description">
                                         Air Filter supporting HVAC equipment for clean room : Frefilter, Medium Filter & Hepa Filter 
                                     </p>
-                                    <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                 </div>
                             </article>
                         </div>
@@ -505,7 +488,6 @@
                 <div class="card__container swiper text-center" data-aos="zoom-in-down">
                     <div class="card__content">
                         <div class="swiper-wrapper">
-                            <!-- Produk 7-13 -->
                             <article class="card__article swiper-slide">
                                 <a href="PrPassbox.html">
                                     <div class="card__image">
@@ -518,7 +500,6 @@
                                         <p class="card__description">
                                             Pass Box is supporting equipment for clean room and pharmaceutical manufacturing facilities and laboratories.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -534,7 +515,6 @@
                                         <p class="card__description">
                                             LED Operating Lamp.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -548,9 +528,7 @@
                                     <div class="card__data">
                                         <h3 class="card__name">LQLED 700500</h3>
                                         <p class="card__description">
-                                            <!-- LED Operating Lamp. -->
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -560,13 +538,11 @@
                                         <img src="style/assets/Creport/Creport 3000 single arm manual.webp" alt="Creeport" class="card__img">
                                         <div class="card__shadow"></div>
                                     </div>
-                                    
                                     <div class="card__data">
                                         <h3 class="card__name">Creport 3000 single arm manual</h3>
                                         <p class="card__description">
                                             Manual Surgical Pendant.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -576,13 +552,11 @@
                                         <img src="style/assets/Surgical_Scrub_Sink_Station/Surgical Scrub Sink Station.webp" alt="Surgical Scrub Sink Station" class="card__img">
                                         <div class="card__shadow"></div>
                                     </div>
-                                    
                                     <div class="card__data">
                                         <h3 class="card__name">Surgical Scrub Sink Station</h3>
                                         <p class="card__description">
                                             Variants to suit your needs: single for 1 person; double for 2 people; single for 3 people; double for 4 people.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -592,13 +566,11 @@
                                         <img src="style/assets/LDT_Operating_Table/LDT 100 Operating Table.webp" alt="operating Table" class="card__img">
                                         <div class="card__shadow"></div>
                                     </div>
-                                    
                                     <div class="card__data">
                                         <h3 class="card__name">LDT 100 Operating Table</h3>
                                         <p class="card__description">
                                             Operation beds adopt Medical Grade 304# full stainless steel materials, the surface is processed through matte processing, feeling more modern, more convenient to clean.
                                         </p>
-                                        <!-- <a href="#product" class="btn btn-lg btn-custom fs-6 p-2">Learn More</a> -->
                                     </div>
                                 </a>
                             </article>
@@ -743,20 +715,20 @@
 
         @media (max-width: 1024px) and (min-width: 780px) {
             .d-flex {
-                flex-direction: column-reverse; /* Memindahkan slider ke bawah */
+                flex-direction: column-reverse;
             }
 
             .text-center {
-                order: -1; /* Memindahkan konten judul dan tombol ke atas */
-                margin-bottom: 30px; /* Menambahkan sedikit jarak di bawah */
+                order: -1; 
+                margin-bottom: 30px; 
             }
 
             .unique_slider_wrapper {
-                margin-top: 30px; /* Memberikan jarak antara slider dan konten di atasnya */
+                margin-top: 30px; 
             }
             
             .unique_project_card {
-                margin-bottom: 15px; /* Menambah jarak antar card di tablet */
+                margin-bottom: 15px; 
             }
         }
 
@@ -804,7 +776,6 @@
         }
         </style>
 
-        <!-- JavaScript -->
         <script>
         document.addEventListener('DOMContentLoaded', function() {
                     const uniqueSwiper = new Swiper('.unique_slider_container', {
@@ -812,11 +783,11 @@
                 spaceBetween: 20,
                 grabCursor: true,
                 autoplay: {
-                    delay: 400, // Delay antar slide (dalam milidetik)
-                    disableOnInteraction: false, // Autoplay akan tetap berjalan meskipun ada interaksi
+                    delay: 400,
+                    disableOnInteraction: false, 
                 },
 
-                loop: true, // Menambahkan loop agar setelah card terakhir kembali ke card pertama
+                loop: true, 
 
                 navigation: {
                     nextEl: '.unique_slider_next',
@@ -852,11 +823,9 @@
         <section class="about-us-section bg-light py-5">
             <div class="container">
             <div class="row align-items-center d-flex justify-content-center">
-                <!-- Gambar -->
                 <div class="photo_img col-md-6">
                     <img src="style/assets/download (4).webp" alt="About Us Image" class="about-us-img img-fluid rounded">
                 </div>
-                <!-- Konten -->
                 <div class="col-md-6">
                     <h2 class="about-us-heading mb-4">About Us</h2>
                     <p class="about-us-text mb-4">
@@ -876,9 +845,7 @@
 
             .about_us{
                 background-image: url(style/assets/button.webp) !important;
-                /* border-color: #1f1f1f !important; */
                 color: #eeeeee !important;
-                /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4); */
             }
             .about_us:hover{
                 background-image: url(style/assets/button.webp) !important;
@@ -1022,7 +989,7 @@
                     </div>
                     <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
                         <p class="h6">Have a Question</p>
-                        <form action="">
+                        <form onsubmit="sendEmail(); reset(); return false;">
                             <div class="form-group">
                                 <label for="namaDepan"></label>
                                 <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
@@ -1036,10 +1003,14 @@
                                 <input type="email" class="form-control" id="email" placeholder="Enter a Valid Email Address">
                             </div>
                             <div class="form-group">
+                                <label for="phone"></label>
+                                <input type="tel" class="form-control" id="phone" placeholder="Enter Your Phone Number">
+                            </div>
+                            <div class="form-group">
                                 <label for="pesan"></label>
                                 <textarea class="form-control" id="pesan" rows="5" placeholder="Enter Your Message"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-submit"><a href="#" class="btn btn-lg btn-custom fs-6 p-2">Submit</a></button>
+                            <button type="submit" class="btn btn-submit my-3 mx-2" style="background-image: url(style/assets/button.webp); background-position: center; color:#F3F7FA">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -1049,8 +1020,28 @@
             <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
         </div>
         
+        <script>
+        emailjs.init("user_id_here");
+
+        function sendEmail() {
+            var templateParams = {
+                from_name: document.getElementById("namaDepan").value + " " + document.getElementById("namaBelakang").value,
+                from_email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value,
+                message: document.getElementById("pesan").value
+            };
+
+            emailjs.send("service_d0kziwv", "template_niy98l5", templateParams) 
+                .then(function(response) {
+                    alert("Pesan berhasil dikirim!");
+                }, function(error) {
+                    alert("Ada kesalahan, coba lagi.");
+                });
+        }
+        </script>
 
 
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();

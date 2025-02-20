@@ -85,8 +85,8 @@
       <div class="row">
         <!-- Kolom kiri: Gambar Produk -->
         <div class="d-flex justify-content-between align-items-center my-3">
-          <a href="index_CHILICOND.html" class="btn btn-outline-secondary">
-              Back to Main Menu
+          <a onclick="history.back()" class="btn btn-outline-secondary">
+              Back
           </a>
         </div>
         <div class="col-md-6">
@@ -99,8 +99,6 @@
             <img src="style/assets/Customized_AHU/Customized_AHU.webp" alt="Customoized AHU" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Customized_AHU/Customized_AHU.webp')">
             <img src="style/assets/Customized_AHU/Customized_AHU1.webp" alt="Cusuztomized AHU" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Customized_AHU/Customized_AHU1.webp')">
             <img src="style/assets/Customized_AHU/Customized_AHU2.webp" alt="Customize AHU" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Customized_AHU/Customized_AHU2.webp')">
-            <!-- <img src="style/assets/MOT/MOT4.webp" alt="Thumbnail 3" class="thumbnail-img me-2" onclick="changeImage('style/assets/MOT/MOT4.webp')"> -->
-            <!-- <img src="gambar4.jpg" alt="Thumbnail 4" class="thumbnail-img me-2" onclick="changeImage('gambar4.jpg')"> -->
           </div>
         </div>
     
@@ -112,8 +110,6 @@
             <br><br>
             This product dedicated to be applied in special requirements (temperature and humidity control), e.g. server room, surgery room, archive room, laboratory, telecommunication facility, museum, control center, IC chip product area, area of graphics and printing achine, and other space office roo that using high-tech facility.
           </p>
-          <!-- Harga Produk -->
-          <!-- <h3>Rp 1.500.000</h3> -->
           
           <!-- Tombol untuk membeli -->
            <div>
@@ -126,43 +122,43 @@
       </div>
     </div>
 
-    <script>
-      function changeImage(imageSrc) {
-        document.getElementById('main-image').src = imageSrc;
-      }
-    </script>
-    <div class="container mb-5">
-      <div class="row text-center">
-          <p class="fw-bold fs-5 pt-5 pb-3">PRODUCT DETAILS</p>
-          <div class="col-md-6">
-              <img src="style/assets/Customized_AHU/Customized_AHU_Details.webp" alt="Fan Filter Unit" class="img-fluid">
-          </div>
-          <div class="col-md-6">
-              <embed src="style/assets/Customized_AHU/BROSURE ITU CTI.pdf" width="100%" height="700vh" type="application/pdf">
-          </div>
+      <script>
+        function changeImage(imageSrc) {
+          document.getElementById('main-image').src = imageSrc;
+        }
+      </script>
+      <div class="container mb-5">
+        <div class="row text-center">
+            <p class="fw-bold fs-5 pt-5 pb-3">PRODUCT DETAILS</p>
+            <div class="col-md-6">
+                <img src="style/assets/Customized_AHU/Customized_AHU_Details.webp" alt="Fan Filter Unit" class="img-fluid">
+            </div>
+            <div class="col-md-6">
+                <embed src="style/assets/Customized_AHU/BROSURE ITU CTI.pdf" width="100%" height="700vh" type="application/pdf">
+            </div>
+        </div>
       </div>
-    </div>
-    <div class="gradient-divider"></div>
+      <div class="gradient-divider"></div>
 
-<!-- ======================================================================= FOOTER -->
-    <style>
-      .breaker{
-          padding-top: 5vh;
-      }
-      .footer {
-      width: 100%;
-      height: 50px;
-      background: #ED1C24 30%;
-      }
-      .whiteinbox{
-          border-radius: 10px;
-      }
-      @media (max-width: 767.98px){
-          .whiteinbox{
-              margin-left: .7rem;
-          }
-      }
-    </style>
+      <!-- ======================================================================= FOOTER -->
+      <style>
+        .breaker{
+            padding-top: 5vh;
+        }
+        .footer {
+        width: 100%;
+        height: 50px;
+        background: #ED1C24 30%;
+        }
+        .whiteinbox{
+            border-radius: 10px;
+        }
+        @media (max-width: 767.98px){
+            .whiteinbox{
+                margin-left: .7rem;
+            }
+        }
+      </style>
 
     <section style="background-image: url(style/assets/background_details_product.webp);">
       <div class="container d-flex justify-content-between pb-5 pt-5">

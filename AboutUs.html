@@ -116,25 +116,21 @@
           background-color: #E04A2B;
         }
 
-        /* CSS untuk posisi dan transisi tombol */
         #scrollUpButton {
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 1000;
-            opacity: 0; /* Awalnya transparan */
-            visibility: hidden; /* Awalnya tidak terlihat */
-            transition: opacity 0.3s ease, visibility 0.3s ease; /* Transisi halus */
+            opacity: 0; 
+            visibility: hidden; 
+            transition: opacity 0.3s ease, visibility 0.3s ease; 
         }
 
         #scrollUpButton.show {
-            opacity: 1; /* Muncul dengan opasitas penuh */
-            visibility: visible; /* Terlihat */
+            opacity: 1; 
+            visibility: visible; 
         }
-    </style>
       </style>
-    </head>
-    <body>
       <section id="AboutUs">
         <div class="container align-items-center">
           <div class="top align-items-center">
@@ -174,31 +170,31 @@
       </section>
 
        <!-- Tombol Scroll Up -->
-    <button id="scrollUpButton" class="btn btn-primary btn-lg rounded-circle shadow">
-      <i class="bi bi-arrow-up"></i>
-  </button>
+      <button id="scrollUpButton" class="btn btn-primary btn-lg rounded-circle shadow">
+        <i class="bi bi-arrow-up"></i>
+      </button>
 
-  <!-- Bootstrap JS + Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-      // JavaScript untuk mengontrol tampilan tombol scroll up dengan transisi
-      window.onscroll = function() {
-          const scrollUpButton = document.getElementById('scrollUpButton');
-          if (document.body.scrollTop > 50000 || document.documentElement.scrollTop > 50000) {
-              scrollUpButton.classList.add('show'); // Tambahkan class 'show' untuk transisi
-          } else {
-              scrollUpButton.classList.remove('show'); // Hapus class 'show' untuk transisi
-          }
-      };
+      <!-- Bootstrap JS + Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script>
+        // JavaScript untuk mengontrol tampilan tombol scroll up dengan transisi
+          window.onscroll = function() {
+            const scrollUpButton = document.getElementById('scrollUpButton');
+            if (document.body.scrollTop > 50000 || document.documentElement.scrollTop > 50000) {
+                scrollUpButton.classList.add('show'); // Tambahkan class 'show' untuk transisi
+            } else {
+                scrollUpButton.classList.remove('show'); // Hapus class 'show' untuk transisi
+            }
+          };
 
-      // Fungsi untuk scroll ke atas
-      document.getElementById('scrollUpButton').onclick = function() {
+          // Fungsi untuk scroll ke atas
+          document.getElementById('scrollUpButton').onclick = function() {
           document.body.scrollTop = 0; // Untuk Safari
           document.documentElement.scrollTop = 0; // Untuk Chrome, Firefox, IE, dan Opera
-      };
-  </script>
+          };
+      </script>
 
-            <!-- Section Profil Perusahaan -->
+          <!-- Section Profil Perusahaan -->
             <section id="profil-perusahaan" class="py-5">
               <div class="container">
                 <h2 class="text-center fw-bold mb-4" style="color: #0F75BC;">Profil Perusahaan</h2>

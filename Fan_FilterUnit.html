@@ -46,103 +46,95 @@
       </div>
     </nav>
 
-    <style>
-      a {
-        text-decoration: none;
+      <style>
+        a {
+          text-decoration: none;
+          }
+        .main-image {
+          width: 350px;
+          max-width: 100%;
+          height: auto;
         }
-      .main-image {
-        width: 350px;
-        max-width: 100%;
-        height: auto;
-      }
-      .thumbnail-img {
-        width: 80px;
-        height: auto;
-        cursor: pointer;
-        transition: opacity 0.3s;
-      }
-      .thumbnail-img:hover {
-        opacity: 0.7;
-      }
-      .btn-custom {
-        background-image: url(style/assets/button.webp);
-        background-position: center;
-        color: white;
+        .thumbnail-img {
+          width: 80px;
+          height: auto;
+          cursor: pointer;
+          transition: opacity 0.3s;
         }
+        .thumbnail-img:hover {
+          opacity: 0.7;
+        }
+        .btn-custom {
+          background-image: url(style/assets/button.webp);
+          background-position: center;
+          color: white;
+          }
 
-        .btn-custom:hover {
-        background-color: #E04A2B;
-        border-color: #E04A2B;
-        }
-        .gradient-divider {
-        width: 100%;
-        height: 20px;
-        background: linear-gradient(to right, #0F75BC 70%, #ED1C24 30%);
-        }
-    </style>
+          .btn-custom:hover {
+          background-color: #E04A2B;
+          border-color: #E04A2B;
+          }
+          .gradient-divider {
+          width: 100%;
+          height: 20px;
+          background: linear-gradient(to right, #0F75BC 70%, #ED1C24 30%);
+          }
+      </style>
 
-    <div class="container pt-5 mt-5">
-      <div class="row">
-        <!-- Kolom kiri: Gambar Produk -->
-        <div class="d-flex justify-content-between align-items-center my-3">
-          <a href="index_CHILICOND.html" class="btn btn-outline-secondary">
-              Back to Main Menu
-          </a>
-        </div>
-        <div class="col-md-6">
-          <div class="head-image mb-3">
-            <!-- Gambar utama yang akan berubah -->
-            <img id="main-image" src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" class="main-image img-fluid border rounded shadow-sm" alt="Fan Filter">
+      <div class="container pt-5 mt-5">
+        <div class="row">
+          <!-- Kolom kiri: Gambar Produk -->
+          <div class="d-flex justify-content-between align-items-center my-3">
+            <a href="index_CHILICOND.html" class="btn btn-outline-secondary">
+                Back to Main Menu
+            </a>
           </div>
-          <div class="d-flex">
-            <!-- Thumbnail Gambar -->
-            <img src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp')">
-            <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Unit1.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Fan_Filter_Unit1.webp')">
-            <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Unit2.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Fan_Filter_Unit2.webp')">
-            <!-- <img src="style/assets/MOT/MOT4.webp" alt="Thumbnail 3" class="thumbnail-img me-2" onclick="changeImage('style/assets/MOT/MOT4.webp')"> -->
-            <!-- <img src="gambar4.jpg" alt="Thumbnail 4" class="thumbnail-img me-2" onclick="changeImage('gambar4.jpg')"> -->
+          <div class="col-md-6">
+            <div class="head-image mb-3">
+              <!-- Gambar utama yang akan berubah -->
+              <img id="main-image" src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" class="main-image img-fluid border rounded shadow-sm" alt="Fan Filter">
+            </div>
+            <div class="d-flex">
+              <!-- Thumbnail Gambar -->
+              <img src="style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Product_Fan_Filter_Unit.webp')">
+              <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Unit1.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Fan_Filter_Unit1.webp')">
+              <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Unit2.webp" alt="Fan Filter" class="thumbnail-img me-2 border rounded shadow-sm" onclick="changeImage('style/assets/Fan_Filter_Unit/Fan_Filter_Unit2.webp')">
+            </div>
           </div>
-        </div>
-    
-        <!-- Kolom kanan: Deskripsi Produk -->
-        <div class="col-md-6">
-          <P class="h2 fw-bolder">EXHAUST FAN FILTER UNIT</P>
-          <p class="text-muted fw-bold">FOR CRITICAL ENVIRONMENT</p>
-          <p class="lead fs-6 fw-normal mb-5">Designeed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. Airflow Capacity 500, 1000 and 1500 CFM with pre filter, hepa filter and UV lamp.
-            <br><br>
-            <!-- Beberapa teknologi yang kami satukan tersebut kedepan akan sangat berkaitan dengan perkembangan teknologi dimana dituntut Rumah Sakit harus menyediakan sarana teknologi informasi yang dapat diakses dimanapun dengan berbasis android/gadget. CCL MOT Smart System yang memiliki workshop mekanik dengan peralatan cukup lengap dan dapat memproduksi beberapa jenis perangkat mekanik berbahan staninless steel yang diperlukan dalam sistem tata udara dan Ruang Operasi -->
-          </p>
-          <!-- Harga Produk -->
-          <!-- <h3>Rp 1.500.000</h3> -->
-          
-          <!-- Tombol untuk membeli -->
-           <div>
-            <button class="btn btn-primary btn-custom"><a href="contact.html" style="color: #EFF8FF;" >Request a Quote</a></button>
-             <br><br>
-             <a href="style/assets/Fan_Filter_Unit/BROSUR_PT_CTI_EFFU 500_1000_1500 cfm.pdf" target="_blank" class="fw-bold">OPEN BROCHURE (Click to view or download)</a>
-             <br>
-           </div>
+          <!-- Kolom kanan: Deskripsi Produk -->
+          <div class="col-md-6">
+            <P class="h2 fw-bolder">EXHAUST FAN FILTER UNIT</P>
+            <p class="text-muted fw-bold">FOR CRITICAL ENVIRONMENT</p>
+            <p class="lead fs-6 fw-normal mb-5">Designeed specifically for use in cleanrooms, pharmacies, pharmaceutical manufacturing facilities and laboratories. Airflow Capacity 500, 1000 and 1500 CFM with pre filter, hepa filter and UV lamp.
+              <br><br>
+            </p>
+            <div>
+              <button class="btn btn-primary btn-custom"><a href="contact.html" style="color: #EFF8FF;" >Request a Quote</a></button>
+              <br><br>
+              <a href="style/assets/Fan_Filter_Unit/BROSUR_PT_CTI_EFFU 500_1000_1500 cfm.pdf" target="_blank" class="fw-bold">OPEN BROCHURE (Click to view or download)</a>
+              <br>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <script>
-      function changeImage(imageSrc) {
-        document.getElementById('main-image').src = imageSrc;
-      }
-    </script>
+      <script>
+        function changeImage(imageSrc) {
+          document.getElementById('main-image').src = imageSrc;
+        }
+      </script>
 
-    <div class="container mb-5">
-        <div class="row text-center">
-            <p class="fw-bold fs-5 pt-5 pb-3">FAN FILTER UNIT DETAILS</p>
-            <div class="col-md-6">
-                <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Details.webp" alt="Fan Filter Unit" class="img-fluid">
-            </div>
-            <div class="col-md-6">
-                <embed src="style/assets/Fan_Filter_Unit/BROSUR_PT_CTI_EFFU 500_1000_1500 cfm.pdf" width="100%" height="700vh" type="application/pdf">
-            </div>
-        </div>
-    </div>
+      <div class="container mb-5">
+          <div class="row text-center">
+              <p class="fw-bold fs-5 pt-5 pb-3">FAN FILTER UNIT DETAILS</p>
+              <div class="col-md-6">
+                  <img src="style/assets/Fan_Filter_Unit/Fan_Filter_Details.webp" alt="Fan Filter Unit" class="img-fluid">
+              </div>
+              <div class="col-md-6">
+                  <embed src="style/assets/Fan_Filter_Unit/BROSUR_PT_CTI_EFFU 500_1000_1500 cfm.pdf" width="100%" height="700vh" type="application/pdf">
+              </div>
+          </div>
+      </div>
     <div class="gradient-divider"></div>
 
 <!-- ======================================================================= FOOTER -->
@@ -150,14 +142,17 @@
       .breaker{
           padding-top: 5vh;
       }
+
       .footer {
       width: 100%;
       height: 50px;
       background: #ED1C24 30%;
       }
+
       .whiteinbox{
           border-radius: 10px;
       }
+
       @media (max-width: 767.98px){
           .whiteinbox{
               margin-left: .7rem;
@@ -185,33 +180,33 @@
                   </div>
               </div>
           </div>
-          <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
-              <p class="h6">Have a Question</p>
-              <form action="">
-                  <div class="form-group">
-                      <label for="namaDepan"></label>
-                      <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
-                  </div>
-                  <div class="form-group">
-                      <label for="namaBelakang"></label>
-                      <input type="text" class="form-control" id="namaBelakang" placeholder="Enter Your Last Name">
-                  </div>
-                  <div class="form-group">
-                    <label for="email"></label>
+            <div class="whiteinbox pt-5 d-inline col-md-6" style="background-color: #EFF8FF;">
+                <p class="h6">Have a Question</p>
+                <form action="">
+                    <div class="form-group">
+                        <label for="namaDepan"></label>
+                        <input type="text" class="form-control" id="namaDepan" placeholder="Enter Your First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="namaBelakang"></label>
+                        <input type="text" class="form-control" id="namaBelakang" placeholder="Enter Your Last Name">
+                    </div>
+                    <div class="form-group">
+                      <label for="email"></label>
                       <input type="email" class="form-control" id="email" placeholder="Enter a Valid Email Address">
-                  </div>
-                  <div class="form-group">
-                    <label for="pesan"></label>
+                    </div>
+                    <div class="form-group">
+                      <label for="pesan"></label>
                       <textarea class="form-control" id="pesan" rows="5" placeholder="Enter Your Message"></textarea>
-                  </div>
+                    </div>
                   <button type="submit" class="btn btn-submit"><a href="#" class="btn btn-lg btn-custom fs-6 p-2">Submit</a></button>
               </form>
             </div>
           </div>
         </div>
-      </section>  
+    </section>  
     <div class="footer">
-    <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
+      <p class="h5 text-center pt-3" style="color:#EFF8FF;">CHILICOND GROUP 2025</p>
     </div>
 
 
